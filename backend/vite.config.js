@@ -17,6 +17,14 @@ export default defineConfig({
         tailwindcss(),
     ],
     server: {
+        //ini agar bisa di akses
+          host: "0.0.0.0",
+            proxy: {
+            "/api": {
+                target: "http://backend:8000", //  Docker Compose
+                changeOrigin: true,
+            },
+            },
         watch: {
             ignored: ['**/storage/framework/views/**'],
         },
