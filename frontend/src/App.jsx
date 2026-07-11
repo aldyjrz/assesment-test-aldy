@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 
-const API = "/api"
+ const API = import.meta.env.VITE_API_URL;
 
 export default function App() {
   const [form, setForm] = useState({
