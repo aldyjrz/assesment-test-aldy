@@ -168,22 +168,9 @@ Generate application key.
 php artisan key:generate
 ```
 
-Buat database SQLite.
-
+Buat database SQLite didalam dir
 ```bash
-mkdir database
-```
-
-Windows
-
-```bash
-type nul > database/database.sqlite
-```
-
-Linux / macOS
-
-```bash
-touch database/database.sqlite
+/backend/database/database.sqlite
 ```
 
 Ubah konfigurasi database pada file `.env`.
